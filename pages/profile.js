@@ -29,7 +29,7 @@ export default function ProfilePage() {
       return;
     }
     fetchUser();
-  }, [userId]);
+  }, [userId,supabase]);
 
   function fetchUser() {
     supabase.from('profiles')
